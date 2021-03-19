@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript"
+src=
+	"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+	$(function(){
+//		$("h3:nth-child(2n+1)").css("background","yellow").css("color","blue")
+		$("h3:odd").css({"background":"yellow","color":"blue"})
+//		$("h3:nth-child(2n)").css("background","black").css("color","yellow")
+		$("h3:even").css({"background":"black","color":"yellow"})
+		
+//		$("h2:nth-child(3n)").css({"background":"black","color":"white"})
+//		$("h2:nth-child(3n+1)").css({"background":"yellow","color":"blue"})
+//		$("h2:nth-child(3n+2)").css({"background":"blue","color":"yellow"})
+
+		$("h2:nth-of-type(3n)").css({"background":"black","color":"white"})
+		$("h2:nth-of-type(3n+1)").css({"background":"yellow","color":"blue"})
+		$("h2:nth-of-type(3n+2)").css({"background":"blue","color":"yellow"})
+		
+		$("h1").css("background","pink")
+		
+		/* $("h1:eq(0)").css({"background":"pink","color":"red"})
+		$("h1:eq(1)").css({"background":"pink","color":"orange"})
+		$("h1:eq(2)").css({"background":"pink","color":"yellow"})
+		$("h1:eq(3)").css({"background":"pink","color":"green"})
+		$("h1:eq(4)").css({"background":"pink","color":"blue"})
+		$("h1:eq(5)").css({"background":"pink","color":"navy"}) */
+
+//반복문으로 처리하기 : each()
+		var colors = ["red","orange","yellow","green","blue","navy"]//배열
+//$("h1") : h1 태그 들.		
+/*
+		$("h1").each(function(i,item){ // i:인덱스, item:h1태그 한개.
+			$(this).css("color",colors[i]).css("background","pink")
+			//$(this) : 현재 반복중인 h1태그
+			
+		})
+*/		
+		$.each(colors,function(i,c){
+			$("h1:eq("+i+")").css("color",c)
+		})
+	})
+</script>
+</head>
+<body>
+h3태그의 홀수번째를 노랑바탕에 파란글씨, 짝수번째 검정바탕에 노랑글씨로 설정
+<h3>H3:Header_0</h3><h3>H3:Header_1</h3><h3>H3:Header_2</h3>
+<h3>H3:Header_3</h3><h3>H3:Header_4</h3><h3>H3:Header_5</h3><hr>
+h2 태그 중 3의 배수인 경우 검정 바탕에 흰글씨로,
+3배수의 나머지가 1 경우 노랑바탕에 파랑글씨로
+3배수의 나머지가 2 경우 파랑바탕에 노랑글씨 설정
+<h2>H2:Header_0</h2><h2>H2:Header_1</h2><h2>H2:Header_2</h2>
+<h2>H2:Header_3</h2><h2>H2:Header_4</h2><h2>H2:Header_5</h2><hr>
+h1 태그는 분홍바탕에 첫번째 빨강, 두번재 오렌지, 노랑,초록,파랑,남색 설정
+<h1>H1:Header_0</h1><h1>H1:Header_1</h1><h1>H1:Header_2</h1>
+<h1>H1:Header_3</h1><h1>H1:Header_4</h1><h1>H1:Header_5</h1>
+</body>
+</html>

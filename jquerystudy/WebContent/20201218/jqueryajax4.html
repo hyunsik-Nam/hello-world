@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>XML 연습</title>
+<script
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script type="text/javascript">
+   $(function(){
+	   $("#btn").click(function(){
+		   $.ajax("ajax4.xml",{
+			   success : function(data){
+				   $(data).find("person").each(function(){
+					   name = "<li>"+$(this).find("name").text()+"</li>"
+					   gender = "<li>"+$(this).find("gender").text()+"</li>"
+					   part = "<li>"+$(this).find("part").text()+"</li>"
+					   $("#person").append("<ul>"+name+gender+part+"</ul>")
+				   })
+			   },
+			   error : function(e){
+				   alert("서버오류:" + e.status)
+			   }
+		   })
+	   })
+	   $("#allbtn").click(function(){
+		   $("#state").html("");
+		   $.ajax("address.xml",{
+			   success : function(data){
+				   $("#state").append("<ul>")
+				   $(data).find("state").each(function(){
+					   $("#state").append("<li>"+$(this).text()+"</li>")
+				   })
+				   $("#state").append("</ul>")
+			   },
+			   error : function(e){
+				   alert("서버 오류:" + e.status);
+			   }
+		   })
+	   })
+   })
+   function stateprint(st){
+	   $("#state").html("");
+	   $.ajax("address.xml",{
+		   success : function(data){
+			   $("#state").append("<ul>")
+			   $(data).find(st).find("state").each(function(){
+				   $("#state").append("<li>"+$(this).text()+"</li>")
+			   })
+			   $("#state").append("<ul>")
+		   },
+		   error : function(e){
+			   alert("서버 오류:" + e.status);
+		   }
+	   })
+   }
+   </script>
+</head>
+<body>
+<button id="btn">XML 연습</button>
+<div id="person"></div>
+
+<button id="allbtn">전체구</button>
+<button onclick="stateprint('east')">동쪽구</button>
+<button onclick="stateprint('west')">서쪽구</button>
+<button onclick="stateprint('south')">남쪽구</button>
+<button onclick="stateprint('north')">북쪽구</button>
+<div id="state"></div>
+</body>
+</html>

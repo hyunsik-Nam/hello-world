@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function check() {
+		a = parseInt(a.value);
+		b = parseInt(b.value);
+		c = parseInt(c.value);
+		d = parseInt(d.value);
+		s=a+b+c+d/4.0;
+		
+		if(s>1000){
+			msg = s + "는 평균이상입니다.";
+		}
+		else{
+			 msg = s + "는 평균미만입니다.";
+		}
+		 f.innerHTML = msg;
+
+		
+	}
+</script>
+</head>
+<body>
+
+1분기 판매량<input type="text" id="a" ><br>
+2분기 판매량<input type="text" id="b"><br>
+3분기 판매량<input type="text" id="c"><br>
+4분기 판매량<input type="text" id="d"><br>
+<input type="button" value="결과보기" onclick="check()"><br>
+
+<div id="f"></div>
+</body>
+</html>

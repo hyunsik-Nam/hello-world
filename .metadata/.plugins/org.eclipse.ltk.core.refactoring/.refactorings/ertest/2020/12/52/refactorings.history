@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ertest/src/남현식 erm.erm&apos; to &apos;남현식.erm&apos;" description="Rename resource &apos;남현식 erm.erm&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/남현식 erm.erm" name="남현식.erm" stamp="1608535051920" updateReferences="true"/>
+</session>

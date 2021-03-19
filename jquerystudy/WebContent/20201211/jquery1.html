@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Jquery 예제 1</title>
+<script type="text/javascript"
+src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+//	$(document).ready(function(){
+		$(function(){
+		//*모든 태그 
+		$("*").css("color","pink")
+		//p 태그의 글자 색을 파랑색으로 설정
+		$("p").css("color","blue")
+		//h1 태그의 글자 색을 파랑색으로 설정
+		$("h1").css("color","red")
+		//class 속성이 item인 태그 글자색 초록
+		$(".item").css("color","green")
+		//id 속성이 selected 인 태그 글자색 오렌지색
+		$("#selected").css("color","orange")
+	})
+</script>
+</head>
+<body>
+<h1>Jquery1<p>Jquery1</p></h1><h1>Jquery1</h1><p>Jquery1</p>
+<h1 class = "item">Jquery1 class=item</h1>
+<h1 id="selected">Jquery1 id=selected</h1>
+<h2>Jquery2</h2><h3>Jquery3</h3>
+</body>
+</html>

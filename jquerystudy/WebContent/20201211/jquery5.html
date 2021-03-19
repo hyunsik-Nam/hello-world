@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>위치관련 선택자 : nth-child()</title>
+<script type="text/javascript"
+src=
+	"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+	$(function(){
+		//첫번째 : 초록색배경, 두번째: 노랑색배경, 세번째:파랑색배경
+		$("tr:nth-child(3n+1)").css("background","green")
+		$("tr:nth-child(3n+2)").css("background","yellow")
+		$("tr:nth-child(3n)").css("background","blue")
+		//0번 index tr 태그 : 검정바탕에 흰글씨로 설정
+		//$("tr:first").css("background","black").css("color","white")
+		$("tr:eq(0)").css("background","black").css("color","white")
+		$("tr:eq(2)").css("background","white").css("color","blue")
+	})
+</script>
+</head>
+<body>
+<table border="1">
+	<tr><th>이름</th><th>혈액형</th><th>지역</th></tr>
+	<tr><th>홍길동</th><th>O형</th><th>서울</th></tr>
+	<tr><th>이몽룡</th><th>A형</th><th>남원</th></tr>
+	<tr><th>임꺽정</th><th>B형</th><th>전주</th></tr>
+	<tr><th>김삿갓</th><th>AB형</th><th>하남</th></tr>
+	<tr><th>홍길동</th><th>O형</th><th>서울</th></tr>
+	<tr><th>이몽룡</th><th>A형</th><th>남원</th></tr>
+	<tr><th>임꺽정</th><th>B형</th><th>전주</th></tr>
+	<tr><th>김삿갓</th><th>AB형</th><th>하남</th></tr>
+</table>
+</body>
+</html>

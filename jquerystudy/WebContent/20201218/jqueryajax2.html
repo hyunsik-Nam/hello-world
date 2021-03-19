@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>ajax을 이용한 로그인</title>
+<script
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#submit").click(function(){
+			var param = {id:$("#id").val(),pass:$("#pass").val()}
+			$.ajax({
+				url : "ajax2-1.jsp",
+				type : "POST",
+				data : param,
+				success : function(data){
+					$("#message").html(data)
+				},
+				error : function(e){
+					alert("서버오류:"+e.status)
+				}
+			})
+			return false;
+		})
+		$("#btn").click(function(){
+			var param = {id:$("#id").val()}
+			$.ajax({
+				url : "ajax2-2.jsp",
+				type : "POST",
+				data : param,
+				success : function(data){
+					$("#message").html(data);
+					if($("h1").is(".find")){
+						$("#id").val("");
+					}
+				},
+				error : function(e){
+					alert("서버오류:"+e.status)
+				}
+			})
+			return false;
+		})
+	})
+</script>
+</head>
+<body>
+<form name="f">
+	아이디 <input type="text" id="id">
+		<input type="button" value="아이디중복" id="btn"><br>
+	비밀번호 <input type="password" id="pass"><br>
+		<input type="submit" value="로그인" id="submit">
+</form>
+<div id="message"></div>
+</body>
+</html>

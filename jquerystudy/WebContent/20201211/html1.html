@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>html 함수, text함수</title>
+<script type="text/javascript"
+src=
+	"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+	$(function(){
+		//첫번재 div태그 : <h1>Header-0</h1>
+		//두번재 div태그 : <h1>Header-1</h1>
+		//세번재 div태그 : <h1>Header-2</h1>
+		//$("div").html("<h1>Header-0</h1>")
+		//$("div").html(function(i){
+	//		return "<h1>Header-"+ i +"</h1>"
+	//	})
+		//alert 첫번째 div의 내용 출력하기
+		//alert($("div:eq(0)").html())
+		$("div").text("<h1>Header-0</h1>") //html이 아닌 순수한 문자열 설정
+		alert($("div:eq(0)").text())
+	})
+</script>
+</head>
+<body>
+<div></div><div></div><div></div>
+</body>
+</html>

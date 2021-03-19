@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- /WebContent/20201110/inputex1.html -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>로그인</title>
+<script type="text/javascript">
+	function checkinput(f) {
+		if(f.id.value == ''){//아이디 입력이 되지않은경우
+			alert('아이디를 입력하세요')
+			f.id.focus(); //커서를 아이디엽력란으로 이동
+			return false;
+		}
+		if(f.id.value == ''){//비밀번호가 입력 되지 않은 경우
+			alert('비밀번호를 입력하세요')
+			f.pw.focus();
+			return false;
+		}
+		//opener : 현재창을 open 한 window. openex1.html 페이지
+		//name 속성의 값을 이용하여 접근
+//		opener.document.f.id.value = f.id.value;
+//		opener.document.f.pw.value = f.pw.value;
+//		id 속성값을 이용하여 태그에 접근하기
+		opener.document.getElementByid('id').value=f.id.value;
+		opener.document.getElementByid('pw').value=f.pw.value;
+		
+		self.close();
+		return false;
+	}
+</script>
+</head>
+<body>
+<!-- onsubmit : form 객체에 존재하는 submit 버튼이 클릭되면 발생되는 이벤트 
+		checkinput 함수의 리턴값이 false 인경우 submit 하지 않음.
+		this : form 태그
+		submit : action 속성에 등록된 페이지로 이동. form 객체가 가지고 있는 값을 전달
+-->
+<form name="f" method="post" onsubmit="return checkinput(this)">
+	아이디:<input type="text" name ="id"><br>
+	비밀번호:<input type="password" name="pw"><br>
+	<input type="submit" value="로그인">
+	</form>
+</body>
+</html>

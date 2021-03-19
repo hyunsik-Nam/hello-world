@@ -1,0 +1,210 @@
+
+11월 05, 2020 16:05:49.888 NEW SESSION
+11월 05, 2020 16:05:49.888 [1105/160549.885:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 06, 2020 16:47:08.841 NEW SESSION
+11월 06, 2020 16:47:08.842 [1106/164708.829:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 10, 2020 16:00:36.793 NEW SESSION
+11월 10, 2020 16:00:36.793 [1110/160036.783:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 20, 2020 16:34:20.735 NEW SESSION
+11월 20, 2020 16:34:20.736 [1120/163420.721:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 23, 2020 09:58:54.226 NEW SESSION
+11월 23, 2020 09:58:54.226 [8760:9200:1123/095854.224:ERROR:device_event_log_impl.cc(211)] [09:58:54.224] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 23, 2020 09:58:54.228 [8760:9200:1123/095854.227:ERROR:device_event_log_impl.cc(211)] [09:58:54.228] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+11월 24, 2020 10:49:50.687 NEW SESSION
+11월 24, 2020 10:49:50.687 [14824:13592:1124/104950.685:ERROR:device_event_log_impl.cc(211)] [10:49:50.684] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 24, 2020 10:49:50.692 [14824:13592:1124/104950.692:ERROR:device_event_log_impl.cc(211)] [10:49:50.691] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 24, 2020 10:59:40.288 [1124/105940.286:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 25, 2020 14:43:02.332 NEW SESSION
+11월 25, 2020 14:43:02.332 [5600:16708:1125/144302.330:ERROR:device_event_log_impl.cc(211)] [14:43:02.329] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 25, 2020 14:43:02.333 [5600:16708:1125/144302.333:ERROR:device_event_log_impl.cc(211)] [14:43:02.332] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 25, 2020 14:52:55.581 [1125/145255.580:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 26, 2020 09:55:06.566 NEW SESSION
+11월 26, 2020 09:55:06.566 [16348:3304:1126/095506.565:ERROR:device_event_log_impl.cc(211)] [09:55:06.565] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 26, 2020 09:55:06.569 [16348:3304:1126/095506.568:ERROR:device_event_log_impl.cc(211)] [09:55:06.568] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 26, 2020 10:04:59.508 [1126/100459.506:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 26, 2020 12:39:43.182 [16348:3304:1126/123943.180:ERROR:device_event_log_impl.cc(211)] [12:39:43.180] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+11월 26, 2020 12:39:43.193 [16348:3304:1126/123943.192:ERROR:device_event_log_impl.cc(211)] [12:39:43.193] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+11월 26, 2020 12:41:12.570 [16348:3304:1126/124112.569:ERROR:device_event_log_impl.cc(211)] [12:41:12.569] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+11월 26, 2020 12:41:12.591 [16348:3304:1126/124112.591:ERROR:device_event_log_impl.cc(211)] [12:41:12.591] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+11월 26, 2020 16:14:27.622 [10744:8432:1126/161427.622:ERROR:device_event_log_impl.cc(211)] [16:14:27.621] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 26, 2020 16:14:27.628 [10744:8432:1126/161427.627:ERROR:device_event_log_impl.cc(211)] [16:14:27.627] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 26, 2020 16:16:08.238 [12840:13136:1126/161608.238:ERROR:device_event_log_impl.cc(211)] [16:16:08.238] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 26, 2020 16:16:08.243 [12840:13136:1126/161608.242:ERROR:device_event_log_impl.cc(211)] [16:16:08.243] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+11월 27, 2020 09:38:46.707 NEW SESSION
+11월 27, 2020 09:38:46.707 [14536:4892:1127/093846.706:ERROR:device_event_log_impl.cc(211)] [09:38:46.706] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 27, 2020 09:38:46.709 [14536:4892:1127/093846.709:ERROR:device_event_log_impl.cc(211)] [09:38:46.709] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 27, 2020 09:48:39.380 [1127/094839.379:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 30, 2020 09:40:47.566 NEW SESSION
+11월 30, 2020 09:40:47.566 [15072:7748:1130/094047.564:ERROR:device_event_log_impl.cc(211)] [09:40:47.564] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 30, 2020 09:40:47.566 [15072:7748:1130/094047.566:ERROR:device_event_log_impl.cc(211)] [09:40:47.566] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 30, 2020 09:40:48.458 [15072:16988:1130/094048.458:ERROR:shared_buffer_dispatcher.cc(184)] Invalid serialized shared buffer dispatcher (invalid num_bytes?)
+11월 30, 2020 09:55:10.169 [11876:14232:1130/095510.169:ERROR:device_event_log_impl.cc(211)] [09:55:10.168] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 30, 2020 09:55:10.171 [11876:14232:1130/095510.171:ERROR:device_event_log_impl.cc(211)] [09:55:10.171] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 30, 2020 09:58:28.450 [14980:3948:1130/095828.450:ERROR:device_event_log_impl.cc(211)] [09:58:28.450] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 30, 2020 09:58:28.452 [14980:3948:1130/095828.452:ERROR:device_event_log_impl.cc(211)] [09:58:28.452] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 30, 2020 10:08:21.726 [1130/100821.724:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 30, 2020 11:48:37.725 [7936:1108:1130/114837.725:ERROR:device_event_log_impl.cc(211)] [11:48:37.724] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 30, 2020 11:48:37.728 [7936:1108:1130/114837.728:ERROR:device_event_log_impl.cc(211)] [11:48:37.727] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 30, 2020 11:58:29.213 [1130/115829.212:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 30, 2020 12:06:23.948 [11396:4416:1130/120623.948:ERROR:device_event_log_impl.cc(211)] [12:06:23.948] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 30, 2020 12:06:23.949 [11396:4416:1130/120623.949:ERROR:device_event_log_impl.cc(211)] [12:06:23.949] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 30, 2020 13:59:07.832 [12076:388:1130/135907.831:ERROR:device_event_log_impl.cc(211)] [13:59:07.831] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 30, 2020 13:59:07.835 [12076:388:1130/135907.834:ERROR:device_event_log_impl.cc(211)] [13:59:07.834] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 30, 2020 14:08:55.554 [1130/140855.553:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 30, 2020 15:17:30.82 [15796:16124:1130/151730.081:ERROR:device_event_log_impl.cc(211)] [15:17:30.081] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 30, 2020 15:17:30.84 [15796:16124:1130/151730.084:ERROR:device_event_log_impl.cc(211)] [15:17:30.084] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+11월 30, 2020 15:27:18.983 [1130/152718.982:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 01, 2020 09:56:51.50 NEW SESSION
+12월 01, 2020 09:56:51.50 [8528:12280:1201/095651.049:ERROR:device_event_log_impl.cc(211)] [09:56:51.049] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 01, 2020 09:56:51.52 [8528:12280:1201/095651.052:ERROR:device_event_log_impl.cc(211)] [09:56:51.052] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 01, 2020 10:06:42.214 [1201/100642.212:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 04, 2020 10:21:01.797 NEW SESSION
+12월 04, 2020 10:21:01.797 [1516:7808:1204/102101.796:ERROR:device_event_log_impl.cc(211)] [10:21:01.796] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 10:21:01.798 [1516:7808:1204/102101.796:ERROR:device_event_log_impl.cc(211)] [10:21:01.796] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 10:30:53.768 [1204/103053.766:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 04, 2020 10:51:23.456 [9312:13900:1204/105123.455:ERROR:device_event_log_impl.cc(211)] [10:51:23.455] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 10:51:23.457 [9312:13900:1204/105123.456:ERROR:device_event_log_impl.cc(211)] [10:51:23.456] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 10:52:39.229 [84:2328:1204/105239.229:ERROR:device_event_log_impl.cc(211)] [10:52:39.229] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 10:52:39.230 [84:2328:1204/105239.230:ERROR:device_event_log_impl.cc(211)] [10:52:39.229] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 11:02:30.195 [1204/110230.194:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 04, 2020 11:37:37.641 [14640:6572:1204/113737.641:ERROR:device_event_log_impl.cc(211)] [11:37:37.640] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 11:37:37.642 [14640:6572:1204/113737.641:ERROR:device_event_log_impl.cc(211)] [11:37:37.641] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 11:40:59.12 [9336:14284:1204/114059.012:ERROR:device_event_log_impl.cc(211)] [11:40:59.012] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 11:40:59.13 [9336:14284:1204/114059.013:ERROR:device_event_log_impl.cc(211)] [11:40:59.014] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 11:45:55.455 [8940:11588:1204/114555.455:ERROR:device_event_log_impl.cc(211)] [11:45:55.454] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 11:45:55.457 [8940:11588:1204/114555.456:ERROR:device_event_log_impl.cc(211)] [11:45:55.455] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 12:00:28.73 [11952:9700:1204/120028.073:ERROR:device_event_log_impl.cc(211)] [12:00:28.073] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 12:00:28.77 [11952:9700:1204/120028.073:ERROR:device_event_log_impl.cc(211)] [12:00:28.074] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 12:02:37.951 [14284:100:1204/120237.951:ERROR:device_event_log_impl.cc(211)] [12:02:37.951] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 12:02:37.952 [14284:100:1204/120237.952:ERROR:device_event_log_impl.cc(211)] [12:02:37.952] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 12:03:52.727 [4440:13768:1204/120352.727:ERROR:device_event_log_impl.cc(211)] [12:03:52.726] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 12:03:52.728 [4440:13768:1204/120352.727:ERROR:device_event_log_impl.cc(211)] [12:03:52.727] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 12:13:40.782 [1204/121340.781:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 04, 2020 13:48:32.302 [13456:14696:1204/134832.301:ERROR:device_event_log_impl.cc(211)] [13:48:32.302] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 13:48:32.303 [13456:14696:1204/134832.302:ERROR:device_event_log_impl.cc(211)] [13:48:32.302] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 13:49:49.945 [12716:6264:1204/134949.945:ERROR:device_event_log_impl.cc(211)] [13:49:49.945] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 13:49:49.946 [12716:6264:1204/134949.945:ERROR:device_event_log_impl.cc(211)] [13:49:49.946] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 14:03:42.373 [16248:13884:1204/140342.373:ERROR:device_event_log_impl.cc(211)] [14:03:42.373] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 14:03:42.374 [16248:13884:1204/140342.373:ERROR:device_event_log_impl.cc(211)] [14:03:42.373] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 04, 2020 14:13:35.366 [1204/141335.364:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 07, 2020 09:47:05.957 NEW SESSION
+12월 07, 2020 09:47:05.957 [6524:15856:1207/094705.956:ERROR:device_event_log_impl.cc(211)] [09:47:05.956] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 07, 2020 09:47:05.971 [6524:15856:1207/094705.958:ERROR:device_event_log_impl.cc(211)] [09:47:05.958] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 07, 2020 09:57:29.237 [2872:11608:1207/095729.237:ERROR:device_event_log_impl.cc(211)] [09:57:29.237] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 07, 2020 09:57:29.241 [2872:11608:1207/095729.241:ERROR:device_event_log_impl.cc(211)] [09:57:29.240] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 07, 2020 10:07:25.376 [1207/100725.374:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 07, 2020 10:47:06.339 [4180:12604:1207/104706.339:ERROR:device_event_log_impl.cc(211)] [10:47:06.340] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 07, 2020 10:47:06.343 [4180:12604:1207/104706.342:ERROR:device_event_log_impl.cc(211)] [10:47:06.343] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 07, 2020 10:56:54.552 [1207/105654.550:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 07, 2020 15:16:39.409 NEW SESSION
+12월 07, 2020 15:16:39.409 [11784:12364:1207/151639.408:ERROR:device_event_log_impl.cc(211)] [15:16:39.408] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 07, 2020 15:16:39.412 [11784:12364:1207/151639.411:ERROR:device_event_log_impl.cc(211)] [15:16:39.411] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 07, 2020 15:26:12.975 [1207/152612.972:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 07, 2020 15:48:44.172 [12848:8244:1207/154844.172:ERROR:device_event_log_impl.cc(211)] [15:48:44.172] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 07, 2020 15:48:44.178 [12848:8244:1207/154844.178:ERROR:device_event_log_impl.cc(211)] [15:48:44.178] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 07, 2020 15:58:38.938 [1207/155838.937:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 07, 2020 16:26:52.713 [16124:2188:1207/162652.713:ERROR:device_event_log_impl.cc(211)] [16:26:52.713] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 07, 2020 16:26:52.717 [16124:2188:1207/162652.716:ERROR:device_event_log_impl.cc(211)] [16:26:52.716] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 07, 2020 16:36:40.990 [1207/163640.988:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 07, 2020 17:31:42.689 [11836:4220:1207/173142.688:ERROR:device_event_log_impl.cc(211)] [17:31:42.688] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 07, 2020 17:31:42.692 [11836:4220:1207/173142.692:ERROR:device_event_log_impl.cc(211)] [17:31:42.691] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 07, 2020 17:41:39.702 [1207/174139.700:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 08, 2020 09:47:42.883 NEW SESSION
+12월 08, 2020 09:47:42.883 [11888:8960:1208/094742.881:ERROR:device_event_log_impl.cc(211)] [09:47:42.882] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 08, 2020 09:47:42.885 [11888:8960:1208/094742.882:ERROR:device_event_log_impl.cc(211)] [09:47:42.882] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 08, 2020 09:57:37.148 [1208/095737.147:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 08, 2020 12:13:14.78 [14040:14596:1208/121314.078:ERROR:device_event_log_impl.cc(211)] [12:13:14.079] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 08, 2020 12:13:14.79 [14040:14596:1208/121314.079:ERROR:device_event_log_impl.cc(211)] [12:13:14.079] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 08, 2020 12:23:12.72 [1208/122312.070:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 09, 2020 09:36:14.683 NEW SESSION
+12월 09, 2020 09:36:14.683 [13248:12620:1209/093614.679:ERROR:device_event_log_impl.cc(211)] [09:36:14.679] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 09, 2020 09:36:14.685 [13248:12620:1209/093614.680:ERROR:device_event_log_impl.cc(211)] [09:36:14.680] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 09, 2020 09:46:08.931 [1209/094608.930:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 14, 2020 09:50:57.150 NEW SESSION
+12월 14, 2020 09:50:57.150 [15880:16364:1214/095057.148:ERROR:device_event_log_impl.cc(211)] [09:50:57.148] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 09:50:57.160 [15880:16364:1214/095057.150:ERROR:device_event_log_impl.cc(211)] [09:50:57.150] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 10:00:48.572 [1214/100048.571:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 14, 2020 10:39:46.121 [16212:6400:1214/103946.121:ERROR:device_event_log_impl.cc(211)] [10:39:46.120] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 10:39:46.137 [16212:6400:1214/103946.124:ERROR:device_event_log_impl.cc(211)] [10:39:46.123] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 10:49:14.700 [3064:7840:1214/104914.699:ERROR:get_updates_processor.cc(256)] PostClientToServerMessage() failed during GetUpdates with error 2
+12월 14, 2020 10:49:57.465 [5732:16016:1214/104957.465:ERROR:device_event_log_impl.cc(211)] [10:49:57.465] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 10:49:57.476 [5732:16016:1214/104957.467:ERROR:device_event_log_impl.cc(211)] [10:49:57.467] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 10:50:26.498 [1724:5804:1214/105026.497:ERROR:device_event_log_impl.cc(211)] [10:50:26.497] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 10:50:26.506 [1724:5804:1214/105026.500:ERROR:device_event_log_impl.cc(211)] [10:50:26.499] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 10:53:14.386 [5788:820:1214/105314.384:ERROR:device_event_log_impl.cc(211)] [10:53:14.385] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 10:53:14.406 [5788:820:1214/105314.390:ERROR:device_event_log_impl.cc(211)] [10:53:14.390] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 10:54:29.656 [14660:14464:1214/105429.655:ERROR:device_event_log_impl.cc(211)] [10:54:29.655] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 10:54:29.670 [14660:14464:1214/105429.659:ERROR:device_event_log_impl.cc(211)] [10:54:29.659] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 11:04:18.177 [1214/110418.176:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 14, 2020 11:15:15.70 [13464:13592:1214/111515.070:ERROR:device_event_log_impl.cc(211)] [11:15:15.069] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 11:15:15.78 [13464:13592:1214/111515.072:ERROR:device_event_log_impl.cc(211)] [11:15:15.071] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 11:45:50.817 [12132:15488:1214/114550.817:ERROR:device_event_log_impl.cc(211)] [11:45:50.817] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 11:45:50.832 [12132:15488:1214/114550.818:ERROR:device_event_log_impl.cc(211)] [11:45:50.819] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 11:46:33.382 [16044:5084:1214/114633.382:ERROR:device_event_log_impl.cc(211)] [11:46:33.382] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 11:46:33.393 [16044:5084:1214/114633.385:ERROR:device_event_log_impl.cc(211)] [11:46:33.385] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 18:28:10.430 [15964:6656:1214/182810.430:ERROR:device_event_log_impl.cc(211)] [18:28:10.430] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 18:28:10.437 [15964:6656:1214/182810.432:ERROR:device_event_log_impl.cc(211)] [18:28:10.432] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 18:29:31.362 [4268:10812:1214/182931.362:ERROR:device_event_log_impl.cc(211)] [18:29:31.362] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 18:29:31.370 [4268:10812:1214/182931.364:ERROR:device_event_log_impl.cc(211)] [18:29:31.364] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 18:32:09.858 [4084:16376:1214/183209.858:ERROR:device_event_log_impl.cc(211)] [18:32:09.857] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 18:32:09.864 [4084:16376:1214/183209.860:ERROR:device_event_log_impl.cc(211)] [18:32:09.860] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 14, 2020 18:41:59.311 [1214/184159.309:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 14, 2020 19:09:56.319 [4084:16376:1214/190956.318:ERROR:device_event_log_impl.cc(211)] [19:09:56.318] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+
+12월 21, 2020 09:53:19.395 NEW SESSION
+12월 21, 2020 09:53:19.395 [18520:16068:1221/095319.392:ERROR:device_event_log_impl.cc(211)] [09:53:19.392] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 21, 2020 09:53:19.413 [18520:16068:1221/095319.395:ERROR:device_event_log_impl.cc(211)] [09:53:19.395] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 21, 2020 10:03:10.248 [1221/100310.246:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 21, 2020 10:19:09.09 [6408:14272:1221/101909.009:ERROR:device_event_log_impl.cc(211)] [10:19:09.009] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 21, 2020 10:19:09.26 [6408:14272:1221/101909.012:ERROR:device_event_log_impl.cc(211)] [10:19:09.012] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 21, 2020 10:28:59.465 [1221/102859.462:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 21, 2020 12:29:22.304 [6408:14272:1221/122922.299:ERROR:device_event_log_impl.cc(211)] [12:29:22.297] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+12월 21, 2020 12:29:22.323 [6408:14272:1221/122922.310:ERROR:device_event_log_impl.cc(211)] [12:29:22.310] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+
+12월 22, 2020 09:50:36.880 NEW SESSION
+12월 22, 2020 09:50:36.880 [14116:8240:1222/095036.878:ERROR:device_event_log_impl.cc(211)] [09:50:36.878] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 22, 2020 09:50:36.894 [14116:8240:1222/095036.880:ERROR:device_event_log_impl.cc(211)] [09:50:36.880] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 22, 2020 09:50:57.994 [11424:17844:1222/095057.994:ERROR:device_event_log_impl.cc(211)] [09:50:57.994] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 22, 2020 09:50:58.07 [11424:17844:1222/095057.996:ERROR:device_event_log_impl.cc(211)] [09:50:57.996] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 22, 2020 10:00:45.477 [1222/100045.476:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 23, 2020 09:42:45.330 NEW SESSION
+12월 23, 2020 09:42:45.330 [9092:9736:1223/094245.328:ERROR:device_event_log_impl.cc(211)] [09:42:45.328] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 23, 2020 09:42:45.343 [9092:9736:1223/094245.330:ERROR:device_event_log_impl.cc(211)] [09:42:45.330] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 23, 2020 09:52:38.495 [1223/095238.493:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 23, 2020 19:12:23.272 [6808:18716:1223/191223.272:ERROR:device_event_log_impl.cc(211)] [19:12:23.272] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 23, 2020 19:12:23.282 [6808:18716:1223/191223.273:ERROR:device_event_log_impl.cc(211)] [19:12:23.273] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 23, 2020 19:22:15.59 [1223/192215.057:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 27, 2020 02:31:24.738 NEW SESSION
+12월 27, 2020 02:31:24.738 [16788:20236:1227/023124.736:ERROR:device_event_log_impl.cc(211)] [02:31:24.736] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 27, 2020 02:31:24.755 [16788:20236:1227/023124.738:ERROR:device_event_log_impl.cc(211)] [02:31:24.737] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 27, 2020 02:41:19.952 [1227/024119.950:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 28, 2020 19:55:20.246 NEW SESSION
+12월 28, 2020 19:55:20.247 [2528:19476:1228/195520.245:ERROR:device_event_log_impl.cc(211)] [19:55:20.245] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 28, 2020 19:55:20.257 [2528:19476:1228/195520.246:ERROR:device_event_log_impl.cc(211)] [19:55:20.246] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 28, 2020 19:55:20.265 [2528:19476:1228/195520.247:ERROR:device_event_log_impl.cc(211)] [19:55:20.247] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 28, 2020 20:05:13.288 [1228/200513.286:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 28, 2020 21:06:27.166 [2528:19476:1228/210627.165:ERROR:page_load_metrics_update_dispatcher.cc(169)] Invalid first_paint (unset) for first_image_paint 0.944 s
+
+12월 29, 2020 15:32:22.601 NEW SESSION
+12월 29, 2020 15:32:22.601 [16560:13364:1229/153222.596:ERROR:device_event_log_impl.cc(211)] [15:32:22.595] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 29, 2020 15:32:22.612 [16560:13364:1229/153222.597:ERROR:device_event_log_impl.cc(211)] [15:32:22.597] USB: usb_device_handle_win.cc:1020 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+12월 29, 2020 15:42:16.66 [1229/154216.064:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)

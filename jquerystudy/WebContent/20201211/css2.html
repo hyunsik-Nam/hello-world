@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>css 함수 : style 속성 담당</title>
+<style type="text/css">
+	.first {color : red; background: yellow}
+	.second {color : pink;}
+	.third {color : orange;}
+</style>
+<script type="text/javascript"
+src=
+	"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+	$(function(){
+		//alert($("h1").css("color")) //h1태그의 color 속성값 리턴
+		//h1태그의 3번째의 color 속성 alert으로 출력
+		//alert($("h1:eq(2)").css("color"))
+		//class 속성이 second color 속성값 출력
+//		alert($(".second").css("color"))
+		alert($(".first").css("background-color"))
+	})
+</script>
+</head>
+<body>
+<h1 class ="first">Header-0</h1><h1 class="second">Header-1</h1>
+<h1 class ="third">Header-2</h1>
+</body>
+</html>

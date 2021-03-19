@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- /WebContent/cssex4.html -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>후손 태그 선택, 자손태그 선택</title>
+<style type="text/css">
+/*
+	선택자1 선택자2 {} : 선택자1의 후손태그 중 선택자2인 태그 선택
+	선택자1 > 선택자2 {} : 선택자1의 자식태그 중 선택자2인 태그 선택
+	선택자1 , 선택자2 {} : 선택자1태그 이거나 선택자2인 태그 선택
+	선택자1선택자2 {} : 선택자1 인 경우와 선택자2인 경우 같이 가지고있는 태그 선택
+*/
+	/*  #header 태그의 하위 태그 중 h1 태그의 글자색을 빨강색으로*/
+	#header h1{color : red;}
+	/*  #header 태그의 자식 태그 중 h1 태그의 글자색을 분홍색으로*/
+	#header > h1 {color : pink;}
+	/*  #header 태그이거나 h1 태그의 글자색을 파랑색으로*/
+	#header , h1 {color : blue;}
+	/* div 태그의 배경색을 노랑색 설정*/
+	div { background: yellow;}
+	#header #nav{background:green;}
+	/* h1태그 중 class 속성이 title인 태그의 배경색을 파랑색으로 설정*/
+	#header.title{background:blue;}
+	/*h1태그 중 id 속성이 content인 태그의 글자크기를 20px로 설정*/
+	
+</style>
+</head>
+<body>
+<div id="header">
+	<h1 class="title">h1 class="title" 태그</h1>
+	<div id="nav">
+		<h1>div id="nav" 하위 h1 태그</h1>
+	</div>
+	<p>#header 태그의 하위 p태그
+</div>
+<h1 id="content">body의 하위 h1 태그</h1>
+<p>body 태구의 하위 p태그
+
+</body>
+</html>

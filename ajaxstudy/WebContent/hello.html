@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>ajax 연습</title>
+<script type="text/javascript" src="ajax.js"></script>
+<script type="text/javascript">
+	function helloToServer(){
+		sendRequest("hello.jsp","name="+document.f.name.value,
+				helloFromServer,"POST");
+	}
+	//콜백함수
+	function helloFromServer(){
+		/*
+		ajax.readyState
+			0 : ajax 객체 생성.
+			1 : ajax.open()된 경우. 준비 완료
+			2 : ajax.send()된 경우. 전송 완료. 서버에서 응답이 안온경우
+			3 : 전송 완료. 서버에서 응답이 일부만 온 경우
+			4 : 응답 완료.
+			
+		ajax.status : 서버의 응답 코드
+		 200 : 정상 응답.
+		 404 : 요청 페이지 없음.
+		 500 : 요청 페이지에서 오류 발생
+		 
+		ajax.responseText :
+			=> 서버에서 수신한 메세지를 문자열 형태로 리턴.
+		ajax.responseXML :
+			=> 서버에서 수신된 메세지를 xml 메세지를 분석하여 DOM 형태로 리턴.
+		*/
+		if(ajax.readyState == 4){	//서버에서 응답 완료
+			if(ajax.status == 200){ // 정상 메세지 수신
+				hello.innerHTML = ajax.responseText;
+								//ajax.responseText : 서버의 응답 메세지
+			}
+		}
+	}
+</script>
+</head>
+<body>
+<form name="f">
+	<input type="text" name="name" value="홍길동">
+	<input type="button" value="인사하기" onclick="helloToServer()">
+</form>
+<div id="hello"></div></body></html>

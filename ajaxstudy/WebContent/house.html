@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>xml,json 연습</title>
+<script type="text/javascript" src="ajax2.js"></script>
+<script type="text/javascript">
+
+	function doXml() {
+		//객체 생성 : 서버에 요청을 전송. 
+		//			4개의 매개변수값을 객체에 멤버 변수값으로 저장
+		new ajax.xhr.Request("house.xml",null,xmlresult,"GET");
+	}
+	function doJson() {
+		new ajax.xhr.Request("house.jsp",null,jsonresult,"GET");
+	}
+	function jsonresult(a) {
+		if(a.readyState ==4){
+			if(a.status == 200){
+				jsoncontrol(a);
+			}
+		}
+	}
+	//a : ajax 객체
+	function xmlresult(a) {
+		if(a.readyState ==4){
+			if(a.status == 200){
+				xmlcontrol(a);
+			}
+		}
+	}
+	function jsoncontrol(xhr) {
+		var data = xhr.responseText;
+		console.log(data);
+		var htmldata = "<table border ='1'>"
+			+"<tr><th>주소</th><th>가격</th><th>특징</th></tr>";
+		var jsondata = JSON.parse(data); //객체 정보로 저장
+		for(var i=0;i<jsondata.properties.length;i++){
+			htmldata +=
+					"<tr><td>" + jsondata.properties[i].address +
+					"</td><td>" + jsondata.properties[i].price +
+					"</td><td>" + jsondata.properties[i].comment +
+					"</td></tr>"
+		}
+		htmldata += "<tr><td colspan='3' align='center'>총 매물 건수:"
+			+ jsondata.properties.length +"건</td></tr></table>"
+			result.innerHTML = "<h2>JSON 주택 정보</h2>"
+			result.innerHTML += htmldata;
+	}
+	function xmlcontrol(xhr) {
+		var xmlDoc = xhr.responseXML;
+		var house = xmlDoc.getElementsByTagName("property");
+		var htmldata =
+		"<table border ='1'><tr><th>주소</th><th>가격</th><th>특징</th></tr>";
+		for(var i=0;i<house.length;i++){
+			var address = house[i].getElementsByTagName("address")[0]
+						.childNodes[0].nodeValue;
+			var price = house[i].getElementsByTagName("price")[0]
+						.childNodes[0].nodeValue;
+			var comment = house[i].getElementsByTagName("comment")[0]
+						.childNodes[0].nodeValue;
+			htmldata += "<tr><td>" + address + "</td><td>"
+						+ price + "</td><td>" + comment + "</td></tr>"
+		}
+		htmldata += "<tr><td colsapn='3' align='center'>총 매물 건수:"
+		+ house.length + "건</td></tr></table>"
+		result.innerHTML = "<h2>XML 주택 정보</h2>"
+		result.innerHTML += htmldata;
+	}
+</script>
+</head>
+<body>
+<input type="button" value="xml 매물 검색" onclick="doXml()">
+<input type="button" value="json 매물 검색" onclick="doJson()">
+<div id="result"></div>
+</body>
+</html>

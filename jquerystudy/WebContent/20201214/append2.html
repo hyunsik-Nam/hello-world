@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>이미지 위치 변경하기</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//$("img") : img 태그를 선택. 가로를 250설정
+		$("img").css("width",250);
+		//2초에 한번씩 함수 호출
+		setInterval(function(){
+			//$("img").first() : img 태그 중 첫번째.
+			$("img").first().appendTo("body");
+	},2000)
+})
+</script>
+</head>
+<body>
+	<img src="Jellyfish.jpg"/><img src="Desert.jpg"/>
+	<img src="Hydrangeas.jpg"/>
+</body>
+</html>

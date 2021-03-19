@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- /WebContent/20201215/game1.html -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>그림 맞추기 게임</title>
+<style type="text/css">
+table, td {
+   border: 1px solid gray;
+}
+
+table {
+   border-collapse: collapse;
+}
+</style>
+<script
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+   var level = 4;
+   $(function() {
+      shuffle();
+      editHtml();
+      game();
+   })
+   function shuffle() {
+      model = [ "S_1.jpg", "S_1.jpg", "S_2.jpg", "S_2.jpg", "S_3.jpg",
+            "S_3.jpg", "S_4.jpg", "S_4.jpg", "S_5.jpg", "S_5.jpg",
+            "S_6.jpg", "S_6.jpg", "S_7.jpg", "S_7.jpg", "S_8.jpg",
+            "S_8.jpg", "S_9.jpg", "S_9.jpg", "S_10.jpg", "S_10.jpg",
+            "pic00.png", "pic00.png", "pic01.png", "pic01.png",
+            "pic02.png", "pic02.png", "pic03.png", "pic03.png",
+            "pic04.png", "pic04.png", "pic05.png", "pic05.png",
+            "pic06.png", "pic06.png", "pic07.png", "pic07.png" ];
+      cnt = level * level;
+      //이미지 섞기
+      for (var a = 0; a < 10000; a++) {
+         var ran = Math.floor(Math.random() * cnt);
+         var tmp = model[0];
+         model[0] = model[ran];
+         model[ran] = tmp;
+      }
+   }
+   //섞여진 이미지를 순서대로 화면에 출력.(<div id='board'></div>에 출력)
+   function editHtml() {
+      var board = "<table>";
+      for (var i = 0; i < cnt; i++) {
+         if ((i % level) == 0)
+            board += "<tr>"; //행부분 변경
+         board += "<td><img class='pic' src='./imgs/"+model[i]
+      +"' value='"+model[i]+"' width='100' height='100'></td>";
+         if ((i % level) == (level - 1))
+            board += "</tr>";
+         $("#board").html(board + "</table>");
+      }
+   }
+   function game() {
+      //2초 동안 이미지 보여주기
+      setTimeout(function() {
+         /*
+         $(".pic") : img 태그들
+         each : .pic 태그들 각각을 반복.
+         "opacity" : 투명도0 ~ 1값을 가짐
+                  1 : 기본값.불투명
+                  0 : 투명함
+          */
+         $(".pic").each(function(i, item) {
+            $(this).css("opacity", "0.01"); //2초 후에 이미지가 안보여짐
+         })
+      }, 2000);
+      var total = 0; //클릭된 갯수
+      var count = 0; //첫번째 이미지, 두번째 이미지, 1,2만 가능
+      var success = 0; //찾은 이미지 갯수
+      var onePic = null; //첫번째 이미지 객체
+      var twoPic = null; //두번째 이미지 객체
+      $(".pic").click(function() { //이미지 클릭시
+         //is(".diepic") : 클릭된 이미지의 class 속성이 diepic 여부
+         //                조건문
+         if (!$(this).is(".diepic")) {
+            total++;
+            $(this).css("opacity", 1); //선택한 이미지를 보여줌
+            count++; //1 : 첫번째 .  2 : 두번째 이미지
+            if (count == 1) {
+               onePic = $(this);
+               //onePic : img 태그
+               //onePic.parent() : td 태그
+               //onePic.parent().parent() : tr태그
+               //index() : tr 태그의 순번. tbody 태그의 하위들(tr)중의 나의 위치
+               onex = onePic.parent().parent().index();//tr인덱스
+               oney = onePic.parent().index();        //td인덱스
+            } else if (count == 2) {
+               twoPic = $(this);
+               twox = twoPic.parent().parent().index();
+               twoy = twoPic.parent().index();
+               //행, 열 다른경우 추가. index() : 현재의 위치 리턴
+               if (onePic.attr("src") == twoPic.attr("src")
+                     && (onex != twox || oney != twoy)) {//같은 이미지
+                  success++; //찾은 이미지 쌍의 갯수
+                  onePic.addClass("diepic"); //class 속성 등록
+                  twoPic.addClass("diepic");
+                  onePic.disable = true;
+                  twoPic.disable = true;
+                  if (cnt / 2 == success) { //모든 이미지 찾음
+                     alert(total + "번 만에 성공. 게임종료")
+                     setTimeout(function() {
+                        if (confirm("게임을 계속하시겠습니까?"))
+                           location.reload(); //현재 url 다시 요청
+                     }, 2000)
+                  }
+               } else {//똑같은 이미지가 아닌 경우
+                  setTimeout(function() {
+                     onePic.css("opacity", "0.01"); //이미지 보여지지 않음
+                     twoPic.css("opacity", "0.01");
+                  }, 50);
+               }
+               count = 0;
+            } else {
+               alert("프로그램 오류 발생");
+            }
+         } //is.("diepic") 아니면.
+      })
+   }
+   function gamestart(sel) {
+      level = parseInt(sel.value);
+      shuffle();
+      editHtml();
+      game();
+   }
+</script>
+</head>
+<body>
+   <select id="level" onchange="gamestart(this)">
+      <option value="2">2 X 2</option>
+      <option value="4" selected="selected">4 X 4</option>
+      <option value="6">6 X 6</option>
+   </select>
+   <div id="board"></div>
+</body>
+</html>

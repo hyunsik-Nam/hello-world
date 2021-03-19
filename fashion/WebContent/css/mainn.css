@@ -1,0 +1,10 @@
+/*  /WebContent/css/main.css*/
+body,h1,h2,h3,h4,h5,h6,a,tr,td {font-family: "Raleway", sans-serif}
+a.btn{
+    display:block;
+    width:80px;
+    line-height:30px;
+    text-align:center;
+    background-color:#222;
+    color:#fff;
+}

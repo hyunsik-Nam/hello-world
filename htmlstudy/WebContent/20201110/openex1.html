@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- /WebContent/20201110/openex1.html -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>새창 열기</title>
+<script type="text/javascript">
+	var nw;
+	function open_win(){
+		//open('새로 열릴 창에 보여질 url','새창이름')
+		//nw : 새창의 window 객체임.
+		nw = window.open("","open",
+				"width=600,height=200,menubar=no,top=200,left=200");
+		nw.document.write("새로운 윈도우 입니다.<br>");
+		nw.document.write("openex1.html 페이지의 open 함수로 열린 창입니다.<br>");
+	}
+	function open_win2(){
+		nw = window.open("inputex1.html","open",
+				"width=600,height=200,menubar=no,top=200,left=200");
+		//새창이 로드될때.
+		nw.onload = function(){
+			nw.document.f.id.value = 'aaa';
+		}
+	}
+	function close_win(){
+		nw.close();
+		//self : 현재 창의 window 객체
+		self.close();
+	}
+</script>
+</head>
+<body>
+<a href="javascript:open_win()">새창열기</a><br>
+<a href="javascript:open_win2()">inputex1.html 페이지 열기</a><br>
+<a href="javascript:close_win()">새창 닫기</a><br>
+<form name="f">
+ 아 이 디 :<input type="text" name="id" id="id"><br>
+ 비밀번호 : <input type="password" name="pw" id="pw"><br>
+</form>
+</body>
+</html>

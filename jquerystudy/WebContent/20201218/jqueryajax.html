@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>jquery를 이용한 ajax 연습</title>
+<script
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#btn1").click(function(){
+			$.ajax("ajax1-1.jsp",{
+				success: function(data) { //서버가 정상 처리
+					//data :  서버가 전송해준 데이터. ajax.responseText
+					$("body").append(data);
+				},
+				error : function(){	//서버에서 오류발생
+					alert("서버 오류 :"+e.status)
+				}
+			})
+		})
+		$("#rmbtn1").click(function(){
+			$("h1:last").remove()
+		})
+		$("#btn2").click(function(){
+			var param = "name=홍길동&age=20"
+			$.ajax({
+				url : "ajax1-2.jsp",
+				type : "POST",
+				data : param,
+				success : function(data){
+					$("body").append(data)
+				},
+				error : function(e){
+					alert("서버오류:"+e.status)
+				}
+			})
+		})
+		$("#rmbtn2").click(function(){
+			$("h2:last").remove()
+		})
+	})
+</script>
+</head>
+<body>
+<button id="btn1">ajax-1.jsp 호출</button>
+<button id="rmbtn1">ajax1-1.jsp 호출로 추가된 내용 제거</button>
+<button id="btn2">ajax1-2.jsp 호출</button>
+<button id="rmbtn2">ajax1-2.jsp 호출로 추가된 내용 제거</button>
+</body>
+</html>

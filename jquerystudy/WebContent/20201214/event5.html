@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>기본으로 제공 되는 이벤트를 무시하기</title>
+<style type="text/css">
+*   { margin : 5px; padding:5px;
+	  border : 3px solid black;
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("a").click(function(event){
+			$(this).css("background-color","blue")
+			event.stopPropagation();
+			event.preventDefault();
+		})
+		$("h1").click(function(){
+			$(this).css("background-color","red")
+		})
+	})
+</script>
+</head>
+<body>
+<h1><a href="http://www.goodee.co.kr">구디아카데미</a></h1>
+<h1>Header 1</h1>
+</body>
+</html>

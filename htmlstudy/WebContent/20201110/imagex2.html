@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- /WebContent/20201110/imagex2.html => 소스위치
+	이미지 위치 : /WebContent/img -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>마우스 이벤트를 이용한 이미지 변경</title>
+<script type="text/javascript">
+	imgOver = new Array(4);
+	imgOut = new Array(4);
+	for (var i=0;i<imgOver.length;i++){
+		imgOver[i] = new Image();
+		imgOut[i] = new Image();
+		imgOver[i].src = "../img/"+i+"_over.jpg";
+		imgOut[i].src="../img/"+i+"_out.jpg";
+	}
+	function mover(n) {
+		document.images[n].src = imgOver[n].src;
+	}
+	function mout(n) {
+		document.images[n].src = imgOut[n].src;
+	}
+</script>
+</head>
+<body>
+<table>
+	<tr><td height="60" align="center">
+	<a href="#" onmouseover="mover(0)" onmouseout="mout(0)">
+		<img name="m0" src="../img/0_out.jpg"></a></td></tr>
+		
+	<tr><td height="60" align="center">
+	<a href="#" onmouseover="mover(1)" onmouseout="mout(1)">
+		<img name="m1" src="../img/1_out.jpg"></a></td></tr>
+		
+	<tr><td height="60" align="center">
+	<a href="#" onmouseover="mover(2)" onmouseout="mout(2)">
+		<img name="m2" src="../img/2_out.jpg"></a></td></tr>
+		
+	<tr><td height="60" align="center">
+	<a href="#" onmouseover="mover(3)" onmouseout="mout(3)">
+		<img name="m3" src="../img/3_out.jpg"></a></td></tr>
+		
+</table>
+</body>
+</html>

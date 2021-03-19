@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- /WebContent/20201110/imagex3.html -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>이미지 옮기기</title>
+<style type="text/css">
+	.droptarget{
+		float : left;
+		min-width:400px;
+		min-height: 35px;
+		margin : 15px;
+		padding : 10px;
+		border : 1px solid #aaaaaa;
+		overflow : auto;
+	}
+</style>
+</head>
+<body>
+<div class="droptarget" ondrop="drop(event)"
+	ondragover="allowDrop(event)">
+	<img src="../img/1_out.jpg" ondragstart="dragStart(event)"
+						  ondragend="dragEnd(event)"
+						  draggable="true" id="dragtarget1">
+						  
+	<img src="../img/1_out.jpg" ondragstart="dragStart(event)"
+						  ondragend="dragEnd(event)"
+						  draggable="true" id="dragtarget2">
+						  
+	<p ondragstart="dragStart(event)" ondragend="dragEnd(event)"
+		draggable="true" id="dragtarget3">이동해 주세요</p>
+		
+	<h1 ondragstart="dragStart(event)" ondragend="dragEnd(event)"
+		draggable="true" id="dragtarget4">이동해 주세요</h1>
+</div>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+</div>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script type="text/javascript">
+	function dragStart(event) {
+		//Text 이름으로 event.target(이벤트실행되는 객체)
+		//id : dragtarget1,dragtarget2,dargtarget3,dragtarget4
+		event.dataTransfer.setData("Text",event.target.id);
+		document.getElementByid("demo1").innerHTML = "이동시작합니다."
+	}
+	
+	function dragEnd(event) {
+		document.getElementByid("demo1").innerHTML = "이동하였습니다."
+	}
+	function allowDrop(event) {
+		event.preventDefault();//기본적인 이벤트를 취소
+		document.getElementById("demo2").innerHTML = "drag over 시작입니다."
+	}
+	function drop(event) {
+		event.preventDefault();
+		var data = event.dataTransfer.getData("Text");
+		event.target.appendChild(document.getElementById(data));
+		document.getElementById("demo2").innerHTML = "drag drop 입니다.";
+	}
+</script>
+
+</body>
+</html>

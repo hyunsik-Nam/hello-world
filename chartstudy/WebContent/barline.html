@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+</style>
+</head>
+<body>
+	<div style="width: 75%"><canvas id="canvas"></canvas></div>
+<script type="text/javascript">
+var MONTHS =['1월','2월','3월','4월','5월','6월',
+	'7월','8월','9월','10월','11월','12월',];
+var chartData = {
+		labels : MONTHS,
+		datasets : [{
+			type: 'line',
+			backgroundColor:"#FF90FF",
+			borderWidth : 1,
+			label:'영업부',
+			file:false,
+			data:[10,15,25,55,-25,65,30,55,28,43,68]
+		},{
+			type:'bar',
+			label : '영업부',
+			backgroundColor:"#A566FF",
+			data:[10,15,25,55,-25,-65,30,56,78,12,50,25],
+			borderColor:"white",
+			borderWidth : 2,
+		},{
+			type:'line',
+			file:false,
+			label : '총무부',
+			borderColor:"#FF0000",
+			data:[23,15,25,35,25,62,10,23,65,45,56,58]
+		},{
+			type:'bar',
+			label: '총무부',
+			backgroundColor: "#86E57F",
+			data:[23,15,25,35,25,62,10,23,65,45,56,58]
+		}]
+};
+window.onload = function(){
+	var ctx = document.getElementById('canvas').getContext('2d');
+	new Chart(ctx,{
+		type: 'line',
+		data: chartData,
+		options:{
+			responsive:true,
+			title:{display:true,
+				text:'막대그래프와 선그래프'
+				},
+				legend : {display : false},
+				scales:{
+					yAxex:[{
+						display :true,
+						scaleLabel: {
+							display : true,
+							labelString : "부서별 실적 증가율"
+						}
+					}]
+				}
+		}
+	});
+};
+</script>
+</body>
+</html>

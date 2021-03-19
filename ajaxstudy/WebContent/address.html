@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>xml 분석하기</title>
+<script type="text/javascript" src="ajax.js"></script>
+<script type="text/javascript">
+	function loadxml(rtype, tag) {
+		//rtype,tag : 지역변수
+		//requestType,requestTag : 전역변수. 함수내에서 var 예약어 없이 선언.
+		requestType = rtype; //all
+		requestTag = tag;	 //all
+		sendRequest("address.xml",null,parseXml,"GET");
+	}
+	//콜백함수
+	function parseXml() {
+		if(ajax.readyState == 4){
+			if(ajax.status == 200){
+				if(requestType == 'all')
+					listAllStates();
+				else listPartStates();
+			}else{
+				alert("서버 오류:" + ajax.status);
+			}
+		}
+	}
+	function listAllStates() {
+		console.log(ajax.responseText); //문자열 형태로 응답메세지 수신
+		var xmlDoc = ajax.responseXML;	//DOM 형태로 응답메세지 수신
+		//getElementsByTagName : 태그이름으로 노드 검색.
+		//getElementById	: id속성값으로 노드 검색. 유일한 노드
+		var allStates = xmlDoc.getElementsByTagName("state"); //배열로 리턴
+		var divTag = document.getElementById("result"); //노드한개. 객체
+		divTag.innerHTML = "서울 전체 구";
+		for(var i=0;i<allStates.length;i++){
+			divTag.innerHTML += "<br>-"
+				+ allStates[i].childNodes[0].nodeValue;
+		}
+	}
+	function listPartStates() {
+		var xmlDoc = ajax.responseXML;
+		var selectTag = xmlDoc.getElementsByTagName(requestTag)[0];
+		var allStates = selectTag.getElementsByTagName("state");
+		var divTag = document.getElementById("result");
+		divTag.innerHTML = "서울 "+requestType+"쪽 구"
+		for(var i=0;i<allStates.length;i++){
+			divTag.innerHTML += "<br>-"
+				+ allStates[i].childNodes[0].nodeValue;
+		}
+	}
+</script>
+</head>
+<body>
+<h1>서울의 구 정보</h1>
+<input type="button" value="서울 전체 구"
+				onclick="loadxml('all','all')">
+<input type="button" value="서울 동쪽 구"
+				onclick="loadxml('동','east')">
+<input type="button" value="서울 서쪽 구"
+				onclick="loadxml('서','west')">
+<input type="button" value="서울 남쪽 구"
+				onclick="loadxml('남','south')">
+<input type="button" value="서울 북쪽 구"
+				onclick="loadxml('북','north')">
+
+<div id="result"></div>
+</body>
+</html>

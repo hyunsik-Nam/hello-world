@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;address.xml&apos; to &apos;20201218&apos;&#x0D;&#x0A;- Original project: &apos;ajaxstudy&apos;&#x0D;&#x0A;- Destination element: &apos;20201218&apos;&#x0D;&#x0A;- Original element: &apos;address.xml&apos;" description="Copy file" element1="WebContent/address.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1608272019568" target="/jquerystudy/WebContent/20201218" units="0" version="1.0"/>
+</session>

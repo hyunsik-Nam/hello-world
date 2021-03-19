@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>위치 관련 선택자</title>
+<script type="text/javascript"
+src=
+	"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+	$(function(){
+		//tr태그의 짝수인덱스 배경파랑색, 글자색 흰색 설정
+		$("tr:even").css({"background":"blue","color":"white"})
+		//tr태그의 홀수인덱스 배경초록색, 글자색 노랑색 설정
+		$("tr:odd").css({"background":"green","color":"yellow"})
+		//tr태그 중 첫번째 태그의 배경 검정, 글자색 노랑색 설정
+		$("tr:first").css({"background":"black","color":"yellow"})
+//		$("tr:first").css("background","black").css("color","yellow")
+	})
+</script>
+</head>
+<body>
+<table border="1">
+	<tr><th>이름</th><th>혈액형</th><th>지역</th></tr>
+	<tr><th>홍길동</th><th>O형</th><th>서울</th></tr>
+	<tr><th>이몽룡</th><th>A형</th><th>남원</th></tr>
+	<tr><th>임꺽정</th><th>B형</th><th>전주</th></tr>
+	<tr><th>김삿갓</th><th>AB형</th><th>하남</th></tr>
+</table></body></html>

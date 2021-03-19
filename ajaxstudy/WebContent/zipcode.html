@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>우편번호 보기</title>
+<script type="text/javascript" src="ajax.js"></script>
+<script type="text/javascript">
+	function doJson() {
+		sendRequest("zipcode.jsp",null,jsonresult,"GET");
+	}
+	function jsonresult() {
+		if(ajax.readyState == 4){
+			if(ajax.status == 200){
+				resultView();
+			}
+		}
+	}
+	function resultView() {
+		htmldata = "<br><table border='1'>"
+		+"<tr><th>우편번호</th><th>읍면동</th><th>주소</th></tr>";
+		var jsondata = JSON.parse(ajax.responseText);
+		for(var i=0;i<jsondata.ZIP.length;i++){
+			var code = jsondata.ZIP[i].zipcode;
+			var dong = jsondata.ZIP[i].dong;
+			var addr = jsondata.ZIP[i].addr;
+			htmldata += "<tr><td>"+code+"</td><td>"
+							+dong+"</td><td>"+addr+"</td></tr>";
+		}
+		htmldata += "</table>";
+		result.innerHTML = htmldata;
+	}
+</script>
+</head>
+<body>
+<input type="button" value="우편번호"
+		onclick ="doJson()"><br>
+<div id="result"></div>
+</body>
+</html>
